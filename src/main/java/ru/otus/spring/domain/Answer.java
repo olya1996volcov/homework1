@@ -23,7 +23,7 @@ public class Answer {
 
     public void setId(int id) {
         this.id = id;
-    }ngvykfckghc
+    }
 
     public boolean isRight() {
         return isRight;
