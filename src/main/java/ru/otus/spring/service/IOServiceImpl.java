@@ -11,8 +11,8 @@ public class IOServiceImpl implements IOService {
         this.reader = reader;
     }
 
-    public void print() {
-        List<Question> questionList = reader.read();
+    public void printQuestions() {
+        List<Question> questionList = reader.readQuestions();
         for (Question q : questionList) {
             System.out.println(q.toString());
         }

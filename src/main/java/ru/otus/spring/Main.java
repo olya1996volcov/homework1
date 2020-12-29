@@ -9,6 +9,6 @@ public class Main {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("/spring-context.xml");
         IOService service = context.getBean(IOServiceImpl.class);
-        service.print();
+        service.printQuestions();
     }
 }

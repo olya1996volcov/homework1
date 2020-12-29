@@ -9,15 +9,15 @@ import java.util.List;
 
 public class CsvFileReader implements Reader {
     private final String fileName;
-    private final List<Question> questions;
+
 
 
     CsvFileReader(String file) {
         fileName = file;
-        questions = new ArrayList<>();
     }
 
-    public List<Question> read() {
+    public List<Question> readQuestions() {
+        List<Question> questions = new ArrayList<>();
         try {
             File file = new File(fileName);
             FileReader fr = new FileReader(file);

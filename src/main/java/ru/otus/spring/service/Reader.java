@@ -5,5 +5,5 @@ import ru.otus.spring.domain.Question;
 import java.util.List;
 
 public interface Reader {
-    List<Question> read();
+    List<Question> readQuestions();
 }
