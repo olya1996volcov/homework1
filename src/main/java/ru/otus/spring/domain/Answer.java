@@ -3,34 +3,16 @@ package ru.otus.spring.domain;
 public class Answer {
     private String answer;
     private int id;
-    private boolean isRight;
+    private final boolean isRight;
 
     public Answer() {
         isRight = false;
     }
 
-    public String getAnswer() {
-        return answer;
-    }
-
-    public void setAnswer(String answer) {
-        this.answer = answer;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
+    public Answer(int id, String answer, boolean isRight) {
         this.id = id;
-    }
-
-    public boolean isRight() {
-        return isRight;
-    }
-
-    public void setRight(boolean right) {
-        isRight = right;
+        this.answer = answer;
+        this.isRight = isRight;
     }
 
     @Override
